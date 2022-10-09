@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/mo.css">
+</head>
+<body>
+    <div id="wrap">
+        <h4 id="menu_btn">≡</h4>
+
+        <div id="left_menu">
+            <div id="menu_wrap">
+                <h5>끄적끄적 오늘의 할 일</h5>
+                <h6>
+                    빈칸에 해야 할 일을 작성하신 후 <br/>
+                    오른쪽의 돌고래를 눌러주세요.
+                </h6>
+                <h6 id="overlist">
+                    목록이 가득찼습니다! <br/>
+                    기존에 있는 목표를 삭제하시면 <br/>
+                    다시 등록이 가능합니다.
+                </h6>
+                <form id="todoform">
+                    <input
+                        id="writeagoal"
+                        type="text"
+                        placeholder=""
+                        maxlength="27"
+                        required/>
+                    <button>🐬</button>
+                </form>
+                
+                <ul id="todolist">
+                </ul>
+            </div>
+        </div>
+        <!-- 왼쪽 메뉴 -->
+
+        <div id="bg_img">
+            <img />
+        </div>
+        <!-- 배경 이미지 -->
+
+        <div id="blackcover"></div>
+        <!-- 블랙 레이어 -->
+
+        <div id="main">
+            <h1 id="date"></h1>
+            <h1 id="weather"></h1>
+            <!-- 메인 상단 -->
+
+            <h1 id="clock">00:00:00</h1>
+            <!-- 시계 -->
+
+            <form id="nameinput">
+                <input
+                    type="text"
+                    placeholder="이름을 입력하신 후 엔터를 눌러주세요."
+                    required/>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <!-- 닉네임 입력창 -->
+
+            <div id="logoutbtn" class="hidden">로그아웃</div>
+            <div id="logout_confirm" class="hidden">
+                <h2>로그아웃 할까요?</h2>
+                <ul>
+                    <li id="yes">네</li>
+                    <li id="no">아니오</li>
+                </ul>
+            </div>
+            <!-- 로그아웃 창 -->
+
+            <div id="role">
+                <h3 id="sentence"></h3>
+                <h3 id="writer"></h3>
+            </div>
+            <!-- 메인 하단 -->
+        </div>
+    </div>
+
+    <script src="js/reset.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/rolemodel.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

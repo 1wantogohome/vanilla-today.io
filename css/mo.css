@@ -1,0 +1,97 @@
+@media (max-width: 700px) {
+    #weather {
+        top: 50px;
+        right: 38%;
+        font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+        #weather {
+            top: 50px;
+            right: 40vw;
+            font-size: 16px;
+        }
+
+
+        @media (max-width: 500px) {
+            #clock {
+                font-size: 85px;
+                font-weight: 500;
+                line-height: 100px;
+            }
+        
+            @media (max-width: 400px) {
+                #clock {
+                    font-size: 60px;
+                    font-weight: 500;
+                    line-height: 70px;
+                }
+
+                #greeting {
+                    font-size: 18px;
+                }
+
+                #logout_confirm {
+                    position: absolute;
+                    top: calc(var(--vh, 1vh) * 50);
+                }
+            }
+        
+            #nameinput>input {
+                width: 500px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+        
+            #nameinput>input::placeholder {
+                text-align: center;
+                font-size: 20px;
+                color: #fff;
+                text-shadow: 2px 2px 8px #0000003f;
+                z-index: 99;
+            }
+        
+            #sentence, #writer {
+                font-size: 13px;
+                font-weight: 400;
+            }
+        
+            #logout_confirm {
+                position: absolute;
+                top: calc(var(--vh, 1vh) * 37);
+                width: 300px;
+                height: 200px;
+                border-radius: 30px;
+                background-color: rgba(255, 255, 255, 0.9);
+                z-index: 99;
+                align-items: center;
+                transition-duration: 1s;
+            }
+        
+            #logout_confirm>ul>li {
+                font-size: 15px;
+                line-height: 30px;
+                width: 70px;
+                height: 30px;
+            }
+        
+            h2 {
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+        
+            #weather {
+                position: absolute;
+                top: 50px;
+                right: 30%;
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+
+
