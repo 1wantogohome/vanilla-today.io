@@ -60,7 +60,7 @@ function showGreeting(username) {
         greeting.innerText = `${username}, 오늘 하루도 화이팅!`;
     } else if (timeGreeting >= 12 && timeGreeting < 15) {
         greeting.innerText = `좋은 점심이에요, ${username}`;
-    } else if (timeGreeting >= 15 && timeGreeting < 18) {
+    } else if (timeGreeting >= 15 && timeGreeting < 19) {
         greeting.innerText = `좋은 오후네요, ${username}`;
     } else if (timeGreeting >= 19 && timeGreeting < 21) {
         greeting.innerText = `좋은 저녁, ${username}`;
