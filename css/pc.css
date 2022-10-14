@@ -303,7 +303,7 @@
     
                 #todoform, #todolist {
                     position: relative;
-                    top: -20px;
+                    top: -10px;
                 }
         
                 #todoform>input {
